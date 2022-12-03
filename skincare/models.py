@@ -119,12 +119,12 @@ class Skincare(models.Model):
     star_ingredient = ArrayField(
         models.CharField(max_length=200, blank=True, null=True),
     )
-    skin_type = models.ForeignKey(
-        'SkinType', null=True, blank=True, on_delete=models.SET_NULL
-        )
-    skin_concern = models.ForeignKey(
-        'SkinConcern', null=True, blank=True, on_delete=models.SET_NULL
-        )
+    skin_type = ArrayField(
+        models.CharField(max_length=10, blank=True, null=True)
+    )
+    skin_concern = ArrayField(
+        models.CharField(max_length=30, blank=True, null=True)
+    )
     crultey_free = models.CharField(max_length=10)
     vegan = models.CharField(max_length=10)
     alchol_free = models.CharField(max_length=10)

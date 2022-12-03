@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 1, 
+        "model": "skincare.skintype",
+        "fields": {
+        "type": "Sensitive", 
+        "description": "Sensitive skin is an intolerant skin type, often reacting severely to a number of skin care products and ingredients. It is often red, sore, itchy and uncomfortable, making it a difficult skin type to care for. It is important to use soothing and calming products that contain gentle ingredients to treat and repair the damaged skin barrier while taking care of other concerns. Simple products that don’t contain harsh chemicals or fragrances are ideal and help to minimise the risk of painful irritation. Choose gentle, lightweight sunscreens to protect the skin from the damaging effects of the sun."
+        }
+    },
+    {
+        "pk": 2, 
+        "model": "skincare.skintype",
+        "fields": {
+        "type": "Oily", 
+        "description": "Oily skin is a combination of excessive shine, enlarged pores and frequent blemishes that are all caused by an overproduction of sebum. The focus needs to be on keeping the skin as clean as possible without drying it out, so products that contain clarifying and oil-controlling ingredients are essential to regulate the production of sebum within the skin. That means lightweight, non-comedogenic serums and moisturisers that can be used alongside gentle cleansers for optimum skin health. Choose gel-based sunscreens to protect the skin and prevent it from becoming oilier in the heat."
+        }
+    },
+    {
+        "pk": 3, 
+        "model": "skincare.skintype",
+        "fields": {
+        "type": "Combination", 
+        "description": "A skin that has both dry and oily, or normal and dry areas at the same time is called combination skin. Combination skin is usually characterised by a shiny t-zone (forehead, nose and chin) and dry or normal areas in other parts of the face. This skin type is the most common, but also the most difficult to treat. Combination skin needs different skincare products for the different parts of the face. It is important to both balance the shiny areas and at the same time moisturise deeply. As a basic skincare routine, you can choose products that are recommended for combination skin and then supplement with products that work specifically for each skin condition. A good way to treat different parts of the skin is to apply several face masks with different properties focused on each need. If you have sensitive areas, you should make sure to treat them first."
+        }
+    },
+    {
+        "pk": 4, 
+        "model": "skincare.skintype",
+        "fields": {
+        "type": "Dry", 
+        "description": "Dry skin is a characterised as tight, sore or flaky skin that often feels uncomfortable and looks dull. Dry skin is lacking in oil so it is important to have a skin care routine that focuses on nourishing and hydrating the skin from the surface down to the lower layers. That means rich moisturisers, creamy cleansers and intensive serums to add much needed moisture back into the skin and reinforce the protective barrier to avoid future water loss. Choose sun protection products in creamy formulas to protect the skin from the drying effects of the sun."
+        }
+    },
+    {
+        "pk": 5, 
+        "model": "skincare.skintype",
+        "fields": {
+        "type": "Normal", 
+        "description": "Normal skin strikes the right balance between oily and dry, has no major imperfections, and is fairly even in tone. The skin still needs to be taken care of properly to ensure it remains this way, so using balancing products is essential for maintaining good skin health. That means gentle cleansers, hydrating moisturisers and brightening serums to boost skin’s natural radiance. Any fluctuations in oil or the odd blemish can be corrected by targeted treatments. Ensure the skin is protected with a lightweight, high factor sunscreen to keep UV-induced damage to a minimum."
+        }
+    }
+]
