@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="full-brand-header">
+    <h2>
+        {{full_brand.friendly_name}}
+    </h2>
+    <hr>
+    <hr>
+    <hr>
+</div>
+
+<div class="full-brand-image-text-container">
+    <div class="full-brand-image-text-inner-container">
+        {% if full_brand.image %}
+        <div class="full-brand-image-container">
+            <img class="full-brand-image" src="{{ full_brand.image.url}}"  alt="{{full_brand.friendly_name}}">
+        </div>
+        {% else %}
+        <div class="full-brand-image-container">
+            <img class="full-brand-image full-no-brand-image" src="{{MEDIA_URL}}noimage.png" alt="{{full_brand.friendly_name}}">
+        </div>
+        {% endif %}
+        <div class="full-brand-text">
+            <p class="full-about-text">
+                {{full_brand.about}}
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

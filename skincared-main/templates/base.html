@@ -1,0 +1,170 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+
+    {% block meta %}
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="SkinCared is a B2C, E-commerce web application that specialises in the procurement and selling of the worlds finest Eastern & Western skincare brands.">
+        <meta name="keywords" content="">
+        <meta name="author" content="Faris Dhoot">
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block corecss %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25">
+    {% endblock %}
+
+    {% block extra_css %}
+    {% endblock %}
+
+    {% block corejs %}
+    <!-- FontAwesome-->  
+    <script src="https://kit.fontawesome.com/cd2a226592.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery, Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <title>SkinCared {% block extra_title %}{% endblock %}</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="{% url 'home' %}">
+                <br>
+                <span class="logo logo-top"><strong>Skin</strong></span>
+                <br>
+                <span class=" logo logo-bottom"><strong>Cared!</strong></span>
+            </a>
+            <!-- <p>Combining the best in science and cosmetics</p> -->
+        </div>
+        
+        <!-- Serach Bar -->
+        <div class="serach-bar-container">
+            <form method="GET" action="">
+                <div class="serach-bar">
+                    <button class="serach-bar-button">
+                        <span class="material-symbols-outlined search-icon">search</span>
+                    </button>
+                    <input class="input-styling" type="text" name="q" placeholder="search for products, brands, specific skin concern or type">
+                </div>
+            </form>
+            <hr>
+            <hr>
+            <hr>
+        </div>
+
+        <div id="user-profile-shoppingcart-container">
+            <ul>
+                <div class="user-profile-container-mobile">
+                    <li class="header-right-icons">
+                        <a href="#">
+                            <span class="material-symbols-outlined profile-icon">person</span>
+                            <p>MY ACCOUNT</p>
+                        </a>
+
+                        <div class="user-profile-drop-down-menu">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <a href="">PRODUCT MANAGEMENT</a>
+                                {% endif %}
+                                <a href="">PROFILE</a>
+                                <hr>
+                                <hr>
+                                <hr>
+                                <a href="{% url 'account_logout' %}">LOGOUT</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}">REGISTER</a>
+                                <hr>
+                                <hr>
+                                <hr>
+                                <a href="{% url 'account_login' %}">LOGIN</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                </div>
+
+                <li class="header-right-icons shopping-bag">
+                    <a href="">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <p>SHOPPING BAG
+                            <br>
+                            {% if grand_total %}
+                            ${{ grand_total|floatformat:2 }}
+                        {% else %}
+                            $0.00
+                        </p>
+                     
+                    {% endif %}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-container">
+            {% include 'includes/main-navigation.html' %}
+            {% include 'includes/mobile-header.html' %}
+        </nav>
+
+    {% if messages %}
+        <div class="message-container"></div>
+    {% endif %}
+
+    {% block page_header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+    
+    <div class="footer-wrapper">
+        <footer class="footer-container">
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="https://youtube.com" rel="noopener nofollow" target="_blank" aria-label="Explore our Youtube page (opens in a new tab)"><i class="fa-brands fa-square-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" rel="noopener nofollow" target="_blank" aria-label="Explore our Facebook page (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" rel="noopener nofollow" target="_blank" aria-label="Explore our Instagram page (opens in a new tab)"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" rel="noopener nofollow" target="_blank" aria-label="Explore our Twitter page (opens in a new tab)"><i class="fa-brands fa-square-twitter"></i></a>
+                    </li>
+                </ul>
+                <div class="mailing-info">
+                    <a href="mailto:skincared@skincared.com">Contact Us: skincared@skincared.com</a>
+                </div>
+                <div class="trade-mark"><script>document.write(new Date().getFullYear())</script> SkinCared &copy; </div>
+            </div>
+        </footer>
+    </div>
+    
+
+    {% block postloadjs %}
+    <!-- Custom JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+    {% endblock %}
+    
+  </body>
+</html>

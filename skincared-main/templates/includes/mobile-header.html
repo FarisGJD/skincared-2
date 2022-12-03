@@ -1,0 +1,181 @@
+<header id="mobile-header-container">
+    <div class="burger-menu-serach-bar-container">
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile-header-icons-divider"></div>
+        
+          <!-- Serach Bar Icon -->
+          <div class="serach-bar-container">
+                <span class="material-symbols-outlined search-bar-mobile">search</span>
+          </div>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo-container logo-mobile-container">
+        <a href="{% url 'home' %}">
+            <br>
+            <span class="logo logo-top logo-mobile logo-mobile-top"><strong>Skin</strong></span>
+            <br>
+            <span class=" logo logo-bottom logo-mobile logo-mobile-bottom"><strong>Cared!</strong></span>
+        </a>
+    </div>
+
+    <div id="user-profile-shoppingcart-container" class="user-profile-cart-mobile-container">
+        <ul>
+            <div class="user-profile-container-mobile">
+                <li>
+                    <br>
+                    <div class="profile-icon">
+                        <a href="#">
+                            <span class="material-symbols-outlined">person</span>
+                            <p>MY ACCOUNT</p>
+                        </a>
+                    </div>
+                  
+                    <div class="user-profile-drop-down-menu">
+                        {% if request.useris_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <a href="">PRODUCT MANAGEMENT</a>
+                            {% endif %}
+                            <a href="">PROFILE</a>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <a href="{% url 'account_logout' %}">LOGOUT</a>
+                        {% else %}
+                            <a href="{% url 'account_signup' %}">REGISTER</a>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <a href="{% url 'account_login' %}">LOGIN</a>
+                        {% endif %}
+                    </div>
+                </li>
+            </div>
+            <li class="shopping-bag">
+                <br>
+                <a href="">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <p>SHOPPING BAG
+                        <br>
+                        {% if grand_total %}
+                        ${{ grand_total|floatformat:2 }}
+                    {% else %}
+                        $0.00
+                    </p>
+                 
+                {% endif %}
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+ <!-- Mobile Drop Down Search Bar -->
+ <div class="mobile-serach-bar-container">
+    <hr>
+    <hr>
+    <form method="GET" action="">
+        <div class="serach-bar">
+            <button class="serach-bar-button">
+                <span class="material-symbols-outlined search-icon-mobile">search</span>
+            </button>
+            <input  type="text" name="q" placeholder="search for products, brands, specific skin concern or type">
+        </div>
+        <hr>
+        <hr>
+    </form>
+</div>
+
+<div class="mobile-navigation-container">
+    <div>
+        <h2 class="mobile-header-title">MENU</h2>
+    </div>
+    <ul class="mobile-navigation-menus">
+        <li class="navigation-item-mobile">
+            <hr>
+            <h2>
+                <a href="{% url 'all_products' %}"><strong>SKINCARE</strong></a>
+            </h2>
+            <div class="navigation-options-mobile mobile-dropdown">
+                <a href="#">
+                    <h3><strong>FACE</strong></h3>
+                </a>
+                
+                <a href=""><strong>Cleanser</strong></a>
+                <a href=""><strong>Exfoliator</strong></a>
+                <a href=""><strong>Toner</strong>,<strong>Essence</strong>&<strong>Mist</strong></a>
+                <a href=""><strong>Serum</strong>&<strong>Ampoule</strong></a>
+                <a href=""><strong>Eye Care</strong>&<strong>Lip Care</strong></a>
+                <a href=""><strong>Skin Treatment</strong></a>
+                <a href=""><strong>Moisturiser</strong></a>
+                <a href=""><strong>Sunscreen</strong></a>
+                <br>
+                <a href="#">
+                    <h3><strong>BODY</strong></h3>
+                </a>
+                
+                <a href=""><strong>Body Cleanser</strong></a>
+                <a href=""><strong>Body Moisturiser</strong></a>
+                <br>
+                <a href="#">
+                    <h3><strong>HANDS</strong></h3>
+                </a>
+                
+                <a href=""><strong>Hand Moisturiser</strong></a>
+                <br>
+                <a href="#">
+                    <h3><strong>FEET</strong></h3>
+                </a>
+                
+                <a href=""><strong>Foot Care</strong></a>
+                <br>
+            </div>
+        </li>
+
+        <li class="navigation-item-mobile">
+            <hr>
+            <h2>
+                <a href="{% url 'brands' %}"><strong>BRANDS</strong></a>
+            </h2>
+        </li>
+
+        <li class="navigation-item-mobile">
+            <hr>
+            <h2>
+                <a href="{% url 'skin_type' %}"><strong>SKIN TYPE</strong></a>
+            </h2>
+            <div class="navigation-options-mobile mobile-dropdown">
+                <a href="{% url 'skin_type' %}"><strong>Normal</strong></a>
+                <a href="{% url 'skin_type' %}"><strong>Dry</strong></a>
+                <a href="{% url 'skin_type' %}"><strong>Combination</strong></a>
+                <a href="{% url 'skin_type' %}"><strong>Oily</strong></a>
+                <a href="{% url 'skin_type' %}"><strong>Sensitive</strong></a>
+            </div>
+        </li>
+
+        <li class="navigation-item-mobile">
+            <hr>
+            <h2 class="navigation-item-only-header-mobile">
+                <strong>SKIN CONCERN</strong>
+            </h2>
+            <hr>
+            <div class="navigation-options-mobile mobile-dropdown">
+                <a href="{% url 'skin_concern' %}"><strong>Acne</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Pigmentation</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Anti-aging / Wrinkles</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Uneven Skin Tone</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Textured Skin</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Congestion</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Compromised Skin Barrier</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Blackheads</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Enlarged Pores</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Oil Control</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Sensitive / Irritated</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Radiance / Dullness</strong></a>
+                <a href="{% url 'skin_concern' %}"><strong>Dryness</strong></a>
+            </div>
+        </li>
+    </ul>
+</div>   

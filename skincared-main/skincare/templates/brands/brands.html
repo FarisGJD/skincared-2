@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Brands Header & Alphabetic Navigation -->
+<div class="brand-header">
+    <h2>BRANDS</h2>
+    <hr>
+    <hr>
+    <hr>
+    <div class="brand-a-z">
+        {% for letter in brand_letters %}
+        <a href="#{{letter}}">
+            {{letter}}
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Full List Of Brands Images -->
+<div class="brand-image-container">
+    {% for brand in brands %}
+     {% if brand.image %}
+        <div>
+            <a href="{% url 'full_brands' brand.slug %}">
+                <img class="brand-image" src="{{ brand.image.url}}" alt="{{full_brand.friendly_name}}">
+            </a>
+        </div>
+        {% else %}
+        <div>
+            <img class="brand-image" src="{{MEDIA_URL}}noimage.png" alt="{{full_brand.friendly_name}}">
+        </div>
+        {% endif %}
+
+    {% endfor %}
+</div>
+
+<!-- List Of Brands  -->
+<div class="brand-outer-container">
+    <div class="brand-container">
+        {% for letter in brand_letters %}
+        <div class="brand-inner-container">
+            <div id="{{letter}}"class="brand-letter">
+                <div class="brand-letter-container">
+                    {{letter}}
+                </div>
+
+                <div class="brand">
+                    {% for brands in brand_letter_startswith %}
+                        {% if letter == "a" %}
+                            {% if brands.friendly_name|first == "A" or brands.friendly_name|first == "a" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "b" %}
+                            {% if brands.friendly_name|first == "B" or brands.friendly_name|first == "b" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "c" %}
+                            {% if brands.friendly_name|first == "C" or brands.friendly_name|first == "c" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "d" %}
+                            {% if brands.friendly_name|first == "D" or brands.friendly_name|first == "d" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "e" %}
+                            {% if brands.friendly_name|first == "E" or brands.friendly_name|first == "e" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "f" %}
+                            {% if brands.friendly_name|first == "F" or brands.friendly_name|first == "f" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "g" %}
+                            {% if brands.friendly_name|first == "G" or brands.friendly_name|first == "g" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "h" %}
+                            {% if brands.friendly_name|first == "H" or brands.friendly_name|first == "h" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "i" %}
+                            {% if brands.friendly_name|first == "I" or brands.friendly_name|first == "i" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "j" %}
+                            {% if brands.friendly_name|first == "J" or brands.friendly_name|first == "j" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "k" %}
+                            {% if brands.friendly_name|first == "K" or brands.friendly_name|first == "k" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "l" %}
+                            {% if brands.friendly_name|first == "L" or brands.friendly_name|first == "l" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "m" %}
+                            {% if brands.friendly_name|first == "M" or brands.friendly_name|first == "m" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "n" %}
+                            {% if brands.friendly_name|first == "N" or brands.friendly_name|first == "n" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "o" %}
+                            {% if brands.friendly_name|first == "O" or brands.friendly_name|first == "o" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "p" %}
+                            {% if brands.friendly_name|first == "P" or brands.friendly_name|first == "p" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "q" %}
+                            {% if brands.friendly_name|first == "Q" or brands.friendly_name|first == "q" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "r" %}
+                            {% if brands.friendly_name|first == "R" or brands.friendly_name|first == "r" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "s" %}
+                            {% if brands.friendly_name|first == "S" or brands.friendly_name|first == "s" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "t" %}
+                            {% if brands.friendly_name|first == "T" or brands.friendly_name|first == "t" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "u" %}
+                            {% if brands.friendly_name|first == "U" or brands.friendly_name|first == "u" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "v" %}
+                            {% if brands.friendly_name|first == "V" or brands.friendly_name|first == "v" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "w" %}
+                            {% if brands.friendly_name|first == "W" or brands.friendly_name|first == "w" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "x" %}
+                            {% if brands.friendly_name|first == "X" or brands.friendly_name|first == "x" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "y" %}
+                            {% if brands.friendly_name|first == "Y" or brands.friendly_name|first == "y" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                        {% if letter == "z"%}
+                            {% if brands.friendly_name|first == "Z" or brands.friendly_name|first == "z" %}
+                            <a href="{% url 'full_brands' brands.slug %}">
+                                {{brands.friendly_name}}
+                            </a>
+                            {% endif %}                    
+                        {% endif %}
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

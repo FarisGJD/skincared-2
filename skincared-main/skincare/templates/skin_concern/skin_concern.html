@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{% for concern in skin_concern %}
+{{concern}}
+<img src="/media/skin-concern-banner.webp" height="300" width="700" alt="{{full_brand.friendly_name}}">
+{% endfor %}
+{% endblock %}

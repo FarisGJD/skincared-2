@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="skin-type-header-container">
+    <h2>SKIN TYPE</h2>
+<hr>
+<hr>
+<hr>
+</div>
+
+<div class="skin-type-info-container">
+    <p>Several criteria are used to classify the different types of skin. For example, Fitzpatrick's classification, first described in 1975, is based on skin color and its response to sun exposure. It is used to determine the proper type of sun protection factor or to predict the risk of skin cancer, among others.</p>
+    <p>   However, from a cosmetic point of view, skin is classified according to several factors related to its balance: sebaceous secretion, hydration and sensitivity level. Thus, each type of skin will have its own characteristics and require different cares. The type of skin is determined by genetics, although it will also be affected by other factors and can change with time.
+        Based on these characteristics, there are five types of healthy skin: normal, dry, oily, combination (both oily and dry skin) and sensitive. </p>
+</div>
+
+<div class="skin-types-container">
+    {% for type in skin_type %}
+<div class="skin-types">
+    <a href="#">
+        {{type.type}}
+    </a>
+</div>
+{% endfor %}
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="home-page-container">
+    <!-- Landing Page -->
+    <div id="hero-image">
+        <div class="hero-text">
+            <div class="hero-text-main">
+                <h1>Welcome to <strong>Skin</strong><strong>Care</strong>d</h1>
+            </div>
+            <div class="hero-text-sub">
+                <p><strong>where we source the finest in science based cosmetics from around the world</strong></p>
+            </div>
+            <div class="hero-text-button">
+                <a href="{% url 'all_products' %}">Shop Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div>
+    <h2>Popular Brands</h2>
+</div> -->
+
+<!-- <div class="carousel-container">
+    <div class="slide-container">
+        <img name="slide" class="slider-images" alt="">
+        <img name="slide1" class="slider-images" alt="">
+        <img name="slide2" class="slider-images" alt="">
+        <img name="slide3" class="slider-images" alt="">
+        <img name="slide4" class="slider-images" alt="">
+        <img name="slide5" class="slider-images" alt="">
+        <img name="slide6" class="slider-images" alt="">
+        <img name="slide7" class="slider-images" alt="">
+        <img name="slide8" class="slider-images" alt="">
+        <img name="slide9" class="slider-images" alt="">
+    </div>    
+</div> -->
+{% endblock %}
