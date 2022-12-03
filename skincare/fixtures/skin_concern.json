@@ -3,8 +3,8 @@
         "pk": 1, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Congestion", 
-        "concern_friendly_name": "congestion", 
+        "concern": "congestion", 
+        "concern_friendly_name": "Congestion", 
         "description": "Sometimes the skin may be in need of deep cleansing. For example, if you have problems with enlarged and/or congested pores. This is due to an imbalance in sebum production which can be caused by a hormonal imbalance, for example. Pores can also seem enlarged because the skin has lost its elasticity, often as a result of increasing age, smoking or free radicals. Too much sunlight also affects the size of the pores. The UV rays break down the skin's building blocks, collagen and elastin, making the skin and pores less elastic. Because of this they cannot revert back to their original shape as easily, and also become enlarged more easily. In order to give the skin a proper deep cleansing, it may be worthwhile to focus on ingredients that balance sebum production and dissolve clogged pores. For example, two magic cures are BHA, Salicylic Acid and Niacinamide. Exfoliate with Salicylic Acid and use a serum with Niacinamide. Also add a clay mask to your skin care routine, for example with Bentonite and Kaolin Clay to absorb excess sebum. Retinol is also one of the worst enemies of misbehaving pores!"
         }
     },
@@ -12,8 +12,8 @@
         "pk": 2, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Dryness", 
-        "concern_friendly_name": "dryness", 
+        "concern": "dryness", 
+        "concern_friendly_name": "Dryness", 
         "description": "Skin that is unusually dry has lowered sebum production and needs nutritious products to repair the skin’s barrier and lock the moisture into the skin. Look for richer creams and nutrient-rich oils and concentrates. Vegetable oils consist of vitamins, fatty acids and squalane, among other things, which are very important components for healthy skin. To find the most nutritious oils that suit dry skin, you should focus on oils that have a high proportion of saturated fatty acids such as shea butter, mango butter, coconut oil, avocado oil, olive oil, turmeric oil, rapeseed oil and sesame oil. An oil can be applied as a serum to cleansed skin, alone or under a moisturising cream. It then provides the skin with nutrition and vitamins that can penetrate into the skin's upper layer. If you are unsure of what kind of nutritious oil is right for your skin type and your skin condition, do not hesitate to contact our skin care therapists!"
         }
     },
@@ -21,8 +21,8 @@
         "pk": 3, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Radiance / Dullness", 
-        "concern_friendly_name": "radiance-dullness", 
+        "concern": "radiance-dullness", 
+        "concern_friendly_name": "Radiance / Dullness", 
         "description": "It can be easy for the skin to feel tired, especially during the winter months. There’s help on hand if you want to get life back into your skin and make it feel less grey! Focus on radiance-boosting products to find your way back to your natural glow. Light-reflecting ingredients are a clever trick to make your skin glow and look healthier. Highlighting products are another trick that help to emphasise cheekbones, for example, for an extra lovely glow. But there are of course many good ingredients that work deep down to revitalise the skin. For example, many vitamins and propolis extracts. Brightening ingredients can also help to give the effect of a glow. Vitamin C, a naturally occurring antioxidant, is especially effective for evening out skin tone. By helping collagen synthesis and skin renewal, it regenerates new and healthy skin with lustrous glow!"
         }
     },
@@ -30,8 +30,8 @@
         "pk": 4, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Sensitive / Irritated", 
-        "concern_friendly_name": "sensitive-irritated", 
+        "concern": "sensitive-irritated", 
+        "concern_friendly_name": "Sensitive / Irritated", 
         "description": "Do you have sensitive skin, surface blood vessels and a tendency to redness flare ups and blushing? Or maybe your skin has worked a little harder than normal in a tough climate, or perhaps undergone chemical treatments? In those instances it is important to repair your skin and allow it to recover. Work with calming and refreshing products to cool a hot, flushing face. It is also important to work with soothing products in cases of inflammation of the skin such as acne. It is important to treat your skin carefully with gentle products. One great tip is to use a gel mask that you have put in the refrigerator for an extra cooling sensation. A gel mask with Cucumber and Aloe Vera, for example, moisturises and soothes effectively. Bisabolol is another example of an amazing ingredient that can help calm reactive skin. Liquorice Extract has soothing properties as well, and ceramides that, among other things, help to build the skin’s barrier can have beneficial effects on sensitivity. A weakened skin barrier can lead to irritation and redness and therefore barrier-enhancing ingredients can help."
         }
     },
@@ -39,8 +39,8 @@
         "pk": 5, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Oil Control", 
-        "concern_friendly_name": "oil-control", 
+        "concern": "oil-control", 
+        "concern_friendly_name": "Oil Control", 
         "description": "Shiny or greasy skin is due to an overproduction of sebum in the sebaceous glands of the skin. Shininess can also be caused by rich facial products that do not suit your skin type. In the summer when you sweat more, shiny parts of the face are more common, especially if you choose wrong products and make-up that form a membrane on the skin. If you use strong and dehydrating products that are not adapted to your skin type, the surface of your skin can become dry and the skin then tries to compensate for this by producing more sebum – which in turn means that the skin is oilier than it should be. A daily moisturising skin care routine adapted to your skin type is important for keeping the skin and sebum production in balance. For combination skin it is common for the t-zone (nose, forehead and chin) to be shinier than the other parts of the face. This can be treated, for example, with a sebum-absorbing mask that is applied to problem areas and with a matte powder over make-up that controls oil during the day."
         }
     },
@@ -48,8 +48,8 @@
         "pk": 6, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Enlarged Pores", 
-        "concern_friendly_name": "enlarged-pores", 
+        "concern": "enlarged-pores", 
+        "concern_friendly_name": "Enlarged Pores", 
         "description": "Problems with enlarged and/or clogged pores are mainly due to an imbalance in the skin’s sebum production. Oily skin often has distended pores because it produces more sebum. This sebum production is controlled by hormones and increased production may be a result of a hormonal imbalance, such as at puberty or menopause. Men generally have higher sebum production and more widened pores than women, due to higher testosterone levels. Pores can also appear larger because the skin has lost its elasticity, often as a result of increasing age, smoking or free radicals. A lot of exposure to sunlight affects the size of the pores. UV rays break down the skin's building blocks, collagen and elastin, making the skin and pores less elastic. This then means that they do not contract back to normal as quickly, and at the same time become distended more easily."
         }
     },
@@ -57,8 +57,8 @@
         "pk": 7, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Blackheads", 
-        "concern_friendly_name": "blackheads", 
+        "concern": "blackheads", 
+        "concern_friendly_name": "Blackheads", 
         "description": "A comedo, commonly called a blackhead, occurs when a pore becomes clogged with sebum, dirt and old skin cells. When the passageway is clogged, the sebum cannot come out and it forms a blockage. When the sebum reacts with the oxygen in the air, a so-called oxidation occurs and the melanin in the sebum becomes black (open comedo). A black blackhead is thus not dirt, but oxidised sebum in the opening of the pore. If you squeeze around the opening (which one should preferably avoid!), the sebum that comes out may look like a small worm, hence the name. A sebum blockage deeper in the skin, a white blackhead, is covered by the top layer of skin. These are easily confused with acne, small lumps in the skin that consist of keratin. Blackheads are often very stubborn and it takes patience and consistency to treat them. Some products can suppress sebum production and act as astringents. Exfoliation is an important part of the treatment. BHA (Salicylic Acid) is a fat-soluble acid that effectively dissolves the sebum and old skin cells in the pores. BHA also has an anti-inflammatory effect, which soothes irritated skin. Ingredients that build up the skin from inside and stimulate collagen production have indirect effects on the pores. When collagen and elastin are strengthened, the skin becomes firmer and more resilient, resulting in an astringent effect."
         }
     },
@@ -66,8 +66,8 @@
         "pk": 8, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Compromised Skin Barrier", 
-        "concern_friendly_name": "compromised-skin-barrier", 
+        "concern": "compromised-skin-barrier", 
+        "concern_friendly_name": "Compromised Skin Barrier", 
         "description": "Successfully treating damaged, reactive skin requires precise and specialist care in order to rebuild and restore it back to health as safely as possible. There are a number of reasons why skin goes on high alert and becomes quick to anger but the main ones include poor health, severe allergies, undergoing surgery or a cosmetic procedure, enduring intense medical treatments, and prolonged bouts of stress. Just one or a combination of these things can significantly weaken the skin, particularly the epidermal barrier, causing it to lose moisture rapidly and allow harmful irritants and bacteria to enter the skin more easily. Other symptoms of damaged or reactive skin are extreme tightness or discomfort, dryness, rashes or lumps, increased surface temperature and a painful stinging or burning sensation. When these symptoms are experienced infrequently, the skin is simply sensitive to a particular ingredient or product whereas any prolonged and reoccurring symptoms indicate damaged, weakened and thinning skin that needs major TLC. To treat this kind of extremely delicate skin on the face and body, look for soothing barrier repairing products that are free of the most common irritants such as heavy perfumes, colourings, alcohol and very strong essential oils. Avoid washing the skin with hot water (use waterless cleansers instead), refrain from exfoliating in any way and keep the number of products used daily to a minimum."
         }
     },
@@ -75,8 +75,8 @@
         "pk": 9, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Textured Skin", 
-        "concern_friendly_name": "textured-skin", 
+        "concern": "textured-skin", 
+        "concern_friendly_name": "Textured Skin", 
         "description": "Textured skin often happens because of dryness and insufficient exfoliation of the skin. Regular use of a variety of peels or of an exfoliating cream helps to remove old skin cells that have remained on the skin’s surface, making it shiny and structurally coarse. Well-maintained skin becomes softer and allows your moisturising cream to work more effectively deep down. To counteract uneven skin texture, focus on exfoliating ingredients, such as AHAs and BHA. These both work to remove old skin cells and thus smooth out the skin, and together with subsequent ingredients help to make the skin more soft and smooth. Uneven skin structure can also have the effect of causing enlarged pores, scars or acne. Use, for example, astringent Niacinamide and antibacterial acids such as the BHA acid or Mandelic Acid, together with ingredients that help the healing process to prevent scarring."
         }
     },
@@ -84,8 +84,8 @@
         "pk": 10, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Uneven Skin Tone", 
-        "concern_friendly_name": "uneven-skin-tone", 
+        "concern": "uneven-skin-tone", 
+        "concern_friendly_name": "Uneven Skin Tone", 
         "description": "Uneven skin tone may occur as a result of various skin conditions. For example, this could include dark circles under the eyes, redness or pigmentation. Nowadays, you can find many different products that balance and neutralise your skin tone and give immediate results. Do you suffer from redness or do you have red marks from acne? In those instances you can make use of creams containing green pigments to directly neutralise the redness. Brightening ingredients help hyperpigmentation and by applying red or orange pigments to dark circles or other dark spots you can neutralise dark areas. Caring ingredients and pigments today come in a BB/CC/DD cream form that melts into your skin and balances out instead of covering. The CC cream, especially, contains pigment but also active ingredients that improve and even out the skin. Examples of ingredients are Arbutin and Vitamin C, which give a lighter and more even skin tone."
         }
     },
@@ -93,8 +93,8 @@
         "pk": 11, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Anti-aging / Wrinkles", 
-        "concern_friendly_name": "anti-aging-wrinkles", 
+        "concern": "anti-aging-wrinkles", 
+        "concern_friendly_name": "Anti-aging / Wrinkles", 
         "description": "How can you combat wrinkles? What are the best skincare ingredients for anti-aging? As we get older, it is common for our skin to go through a whole lot of changes; be it fine lines under the eyes, sunspots on cheeks, wrinkles, and deep lines from facial expressions. If you want to combat sunspots from UV rays exposure, vitamin C is useful for protecting the skin from sun damage and hyperpigmentation. If it is crow’s feet that you would like to get rid of, hydration is the key and ceramides work wonderfully to replenish lasting hydration to the skin. If the issue you are facing is wrinkles and deep lines, peptides and snail mucin are the game-changer for your skincare routine. Still, looking for anti-aging and anti-wrinkle skincare products but not sure where to start? Explore the best anti-aging creams, serums, eye creams, masks, and many more."
         }
     },
@@ -102,17 +102,17 @@
         "pk": 12, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Acne", 
-        "concern_friendly_name": "acne", 
+        "concern": "acne", 
+        "concern_friendly_name": "Acne", 
         "description": "Acne is one of the most common skin conditions and is caused by an overproduction of oil by the sebaceous glands which builds up within the pores and collects debris, such as dead cells and bacteria, which then develop into a blemish. It can affect any one at any age but most sufferers develop acne during puberty however some people can start with this condition later in life, which is commonly known as late onset acne. There are varying degrees of acne but it is most easily recognised by a large cluster/s of blackheads, whiteheads and pustules on the face or body. People with oily skin tend to be most at risk of developing acne but stress, hormones and certain foods or medication can also be responsible for the onset of acne. Topically treating acne and stubborn blemishes is often the most effective way of tackling both mild and moderate forms of this condition. Products that contain Salicylic Acid tend to be the most successful and products that keep the pores clear will also help to minimise the risk of blemishes. As acne-prone skin can also be quite sensitive it is important to use gentle formulations that won’t cause irritation while also ensuring that the skin is hydrated to prevent an over-production of oil."
         }
     },
     {
-        "pk": 12, 
+        "pk": 13, 
         "model": "skincare.skinconcern",
         "fields": {
-        "concern": "Pigmentation", 
-        "concern_friendly_name": "pigmentation", 
+        "concern": "pigmentation", 
+        "concern_friendly_name": "Pigmentation", 
         "description": "Hyperpigmentation is the darkening of the skin caused by increased melanin. It normally appears in patches and can affect the nails as well as the skin. It has many root causes including acne, hormones during pregnancy, certain medications, Melasma and the contraceptive pill. Undeniably the main cause of hyperpigmentation is sun damage."
         }
     }

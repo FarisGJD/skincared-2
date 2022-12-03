@@ -18,7 +18,6 @@ class ProductTypeAdmin(admin.ModelAdmin):
 
     list_display = (
         'friendly_name',
-        'name'
     )
     ordering = ('friendly_name',)
 
@@ -30,14 +29,16 @@ class SkinTypeAdmin(admin.ModelAdmin):
     list_display = (
         'type',
     )
+    ordering = ('type',)
 
 
 class SkinConcernAdmin(admin.ModelAdmin):
     """ Customise Skin Type Admin Panel """
 
     list_display = (
-        'concern',
+        'concern_friendly_name',
     )
+    ordering = ('concern_friendly_name',)
 
 
 class SkincareAdmin(admin.ModelAdmin):
