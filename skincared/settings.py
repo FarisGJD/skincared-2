@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'TRUE'
 
 
-ALLOWED_HOSTS = ['skincared.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['skincared2.herokuapp.com', 'localhost']
 
 
 # Application definition
