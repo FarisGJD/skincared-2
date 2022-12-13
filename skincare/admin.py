@@ -45,20 +45,13 @@ class SkincareAdmin(admin.ModelAdmin):
     """ Customise Skincare Admin Panel """
 
     list_display = (
+        'usage',
         'name',
         'brand',
-        'usage',
         'price',
         'sku',
-        'product_type',
-        'skin_type',
-        'skin_concern',
-        'crultey_free',
-        'vegan',
-        'alchol_free',
-        'fragrance_free',
-        'rating'
     )
+    ordering = ('usage',)
 
 
 admin.site.register(Brand, BrandAdmin)
